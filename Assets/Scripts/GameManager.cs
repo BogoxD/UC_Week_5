@@ -1,12 +1,12 @@
-using System.Collections;
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
-    public GameObject[] Crowns;
-    public Image[] CrownUI;
+    public List<GameObject> Crowns;
+    public List<Image> CrownUI;
     public static GameManager instance;
 
     void Start()
@@ -21,7 +21,18 @@ public class GameManager : MonoBehaviour
     }
     public void CheckCrowns()
     {
-
+        for(int i = 0; i < Crowns.Count; i++)
+        {
+            if(!Crowns[i].activeSelf)
+            {
+                Crowns.RemoveAt(i);
+                CrownUI[i].gameObject.SetActive(true);
+            }   
+        }
+        if(Crowns.Count <= 0)
+        {
+            Debug.Log("You Won!!!");
+        }
     }
 
 }

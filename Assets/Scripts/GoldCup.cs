@@ -7,6 +7,7 @@ public class GoldCup : InteractableObject
     public override void OnEnterTriggerExecute()
     {
         gameObject.SetActive(false);
+        GameManager.instance.CheckCrowns();
     }
 
     public override void OnExitTriggerExecute()
@@ -16,5 +17,7 @@ public class GoldCup : InteractableObject
     public override void OnStayTriggerExecute()
     {
     }
-
+    private void OnDisable()
+    {
+    }
 }
