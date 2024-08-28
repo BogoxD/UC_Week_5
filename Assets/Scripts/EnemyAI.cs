@@ -4,20 +4,23 @@ using UnityEngine;
 
 public class EnemyAI : MonoBehaviour
 {
-    [SerializeField] float maxDistance = 5f;
+    [SerializeField] Transform player;
+    [SerializeField] float speed = 5f;
 
-    Transform player;
+    private Rigidbody enemyRb;
+
     private void Start()
     {
         player = FindObjectOfType<PlayerMovement>().transform;
-        
+        enemyRb = GetComponent<Rigidbody>();
     }
-    void Update()
+    void FixedUpdate()
     {
         MoveTowardsTarget(player);
     }
     private void MoveTowardsTarget(Transform target)
     {
-        transform.position = Vector3.MoveTowards(transform.position, transform.position, maxDistance * Time.deltaTime);
+        Vector3 moveDirection = (target.position - transform.position).normalized;
+        enemyRb.AddForce(moveDirection * speed, ForceMode.Force);
     }
 }

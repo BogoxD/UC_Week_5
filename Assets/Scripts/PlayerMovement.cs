@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    [SerializeField]  float moveSpeed = 5f;
+    [SerializeField] float moveSpeed = 5f;
+    [SerializeField] float maxVelocity = 10f;
+    [SerializeField] float maxAngularVelocity = 5f;
 
     private Camera mainCam;
     private Rigidbody rb;
@@ -20,6 +22,8 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         OnMove();
+        ClampVelocity();
+        ClamAngularVelocity();
     }
     private void OnMove()
     {
@@ -27,12 +31,26 @@ public class PlayerMovement : MonoBehaviour
         float horizontal = Input.GetAxis("Horizontal");
 
         move = mainCam.transform.forward * moveSpeed * vertical + mainCam.transform.right * moveSpeed * horizontal;
-
+        
         rb.AddForce(move.normalized);
+    }
+    private void ClampVelocity()
+    {
+        if (rb.velocity.magnitude > maxVelocity)
+        {
+            rb.velocity = Vector3.ClampMagnitude(rb.velocity, maxVelocity);
+        }
+    }
+    private void ClamAngularVelocity()
+    {
+        if (rb.angularVelocity.magnitude > maxAngularVelocity)
+        {
+            rb.angularVelocity = Vector3.ClampMagnitude(rb.angularVelocity, maxAngularVelocity);
+        }
     }
     private void OnTriggerEnter(Collider other)
     {
-        if(other.CompareTag("DeadZone"))
+        if (other.CompareTag("DeadZone"))
         {
             transform.position = respawnPosition;
             rb.velocity = Vector3.zero;

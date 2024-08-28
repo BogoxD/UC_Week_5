@@ -148,8 +148,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e285f3065c7f804da072f80f612c5aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 6182702008604292563, guid: 306cf2de5a32f164fa7d03617d6eeeba, type: 3}
-  maxDistance: 5
+  player: {fileID: 0}
+  speed: 5
 --- !u!1001 &3725539446778554888
 PrefabInstance:
   m_ObjectHideFlags: 0
