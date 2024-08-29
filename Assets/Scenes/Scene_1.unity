@@ -244,6 +244,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 145226279}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &159548147 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 173560, guid: f20d096cd65070b4a89b6957463d432d,
+    type: 3}
+  m_PrefabInstance: {fileID: 1442566040}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &174050651
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -590,6 +596,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 358398837}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &368255763 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2032157571508932892, guid: c1e3fe7b71463db4abfe4bd90a46744a,
+    type: 3}
+  m_PrefabInstance: {fileID: 863536002}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &394978081
 GameObject:
   m_ObjectHideFlags: 0
@@ -603,7 +615,7 @@ GameObject:
   - component: {fileID: 394978083}
   m_Layer: 5
   m_Name: Crown
-  m_TagString: Untagged
+  m_TagString: CrownUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1290,6 +1302,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GoldCup (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 173560, guid: f20d096cd65070b4a89b6957463d432d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 415040, guid: f20d096cd65070b4a89b6957463d432d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 17.689999
@@ -1335,12 +1351,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f20d096cd65070b4a89b6957463d432d, type: 3}
---- !u!1 &748668435 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 173560, guid: f20d096cd65070b4a89b6957463d432d,
-    type: 3}
-  m_PrefabInstance: {fileID: 748668434}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &748668436 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 415040, guid: f20d096cd65070b4a89b6957463d432d,
@@ -1399,6 +1409,74 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1776329522}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &863536002
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1887865681}
+    m_Modifications:
+    - target: {fileID: 2032157571508932892, guid: c1e3fe7b71463db4abfe4bd90a46744a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2032157571508932892, guid: c1e3fe7b71463db4abfe4bd90a46744a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -4.88
+      objectReference: {fileID: 0}
+    - target: {fileID: 2032157571508932892, guid: c1e3fe7b71463db4abfe4bd90a46744a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -36.08
+      objectReference: {fileID: 0}
+    - target: {fileID: 2032157571508932892, guid: c1e3fe7b71463db4abfe4bd90a46744a,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2032157571508932892, guid: c1e3fe7b71463db4abfe4bd90a46744a,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2032157571508932892, guid: c1e3fe7b71463db4abfe4bd90a46744a,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2032157571508932892, guid: c1e3fe7b71463db4abfe4bd90a46744a,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2032157571508932892, guid: c1e3fe7b71463db4abfe4bd90a46744a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2032157571508932892, guid: c1e3fe7b71463db4abfe4bd90a46744a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2032157571508932892, guid: c1e3fe7b71463db4abfe4bd90a46744a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3004584193167578109, guid: c1e3fe7b71463db4abfe4bd90a46744a,
+        type: 3}
+      propertyPath: m_Name
+      value: Enemy_1 (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c1e3fe7b71463db4abfe4bd90a46744a, type: 3}
 --- !u!4 &1032494841 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7825113253776507948, guid: 57f1335d549de5d4c9d379cc4de471bb,
@@ -1787,10 +1865,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Crowns:
-  - {fileID: 1743334498}
-  - {fileID: 1836912489}
-  - {fileID: 748668435}
-  CrownUI:
+  - {fileID: 159548147}
+  - {fileID: 2117302123}
+  - {fileID: 1912609972}
+  CrownsUI:
   - {fileID: 394978083}
   - {fileID: 2015399826}
   - {fileID: 2028565532}
@@ -2018,6 +2096,10 @@ PrefabInstance:
     - target: {fileID: 173560, guid: f20d096cd65070b4a89b6957463d432d, type: 3}
       propertyPath: m_Name
       value: GoldCup
+      objectReference: {fileID: 0}
+    - target: {fileID: 173560, guid: f20d096cd65070b4a89b6957463d432d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 415040, guid: f20d096cd65070b4a89b6957463d432d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2262,12 +2344,6 @@ Transform:
   - {fileID: 1565566845}
   m_Father: {fileID: 1935156680}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1743334498 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 173560, guid: f20d096cd65070b4a89b6957463d432d,
-    type: 3}
-  m_PrefabInstance: {fileID: 1442566040}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1743334501 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 415040, guid: f20d096cd65070b4a89b6957463d432d,
@@ -2353,7 +2429,7 @@ PrefabInstance:
     - target: {fileID: 2032157571508932892, guid: c1e3fe7b71463db4abfe4bd90a46744a,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -1.65
       objectReference: {fileID: 0}
     - target: {fileID: 2032157571508932892, guid: c1e3fe7b71463db4abfe4bd90a46744a,
         type: 3}
@@ -2363,7 +2439,7 @@ PrefabInstance:
     - target: {fileID: 2032157571508932892, guid: c1e3fe7b71463db4abfe4bd90a46744a,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 2032157571508932892, guid: c1e3fe7b71463db4abfe4bd90a46744a,
         type: 3}
@@ -2428,6 +2504,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GoldCup (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 173560, guid: f20d096cd65070b4a89b6957463d432d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 415040, guid: f20d096cd65070b4a89b6957463d432d, type: 3}
       propertyPath: m_LocalPosition.x
       value: -15.4
@@ -2473,12 +2553,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f20d096cd65070b4a89b6957463d432d, type: 3}
---- !u!1 &1836912489 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 173560, guid: f20d096cd65070b4a89b6957463d432d,
-    type: 3}
-  m_PrefabInstance: {fileID: 1836912488}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1836912490 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 415040, guid: f20d096cd65070b4a89b6957463d432d,
@@ -2515,8 +2589,15 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 840825915}
+  - {fileID: 368255763}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1912609972 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 173560, guid: f20d096cd65070b4a89b6957463d432d,
+    type: 3}
+  m_PrefabInstance: {fileID: 748668434}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1935156679
 GameObject:
   m_ObjectHideFlags: 0
@@ -2641,8 +2722,8 @@ GameObject:
   - component: {fileID: 2015399827}
   - component: {fileID: 2015399826}
   m_Layer: 5
-  m_Name: Crown (1)
-  m_TagString: Untagged
+  m_Name: Crown
+  m_TagString: CrownUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2716,8 +2797,8 @@ GameObject:
   - component: {fileID: 2028565533}
   - component: {fileID: 2028565532}
   m_Layer: 5
-  m_Name: Crown (2)
-  m_TagString: Untagged
+  m_Name: Crown
+  m_TagString: CrownUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2779,6 +2860,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2028565530}
   m_CullTransparentMesh: 1
+--- !u!1 &2117302123 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 173560, guid: f20d096cd65070b4a89b6957463d432d,
+    type: 3}
+  m_PrefabInstance: {fileID: 1836912488}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6294401371818804052
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2919,6 +3006,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SkyDome
+      objectReference: {fileID: 0}
+    - target: {fileID: 5831814716918331113, guid: 363a8f737719f4d2eafb35f885f3706f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
