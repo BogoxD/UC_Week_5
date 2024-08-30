@@ -6,6 +6,9 @@ TagManager:
   tags:
   - DeadZone
   - CrownUI
+  - Powerup
+  - Enemy
+  - PlayerGoal
   layers:
   - Default
   - TransparentFX
