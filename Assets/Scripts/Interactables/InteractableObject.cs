@@ -14,15 +14,19 @@ public abstract class InteractableObject : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        OnEnterTriggerExecute();
+        //if colliding with player
+        if (other.TryGetComponent<PlayerInteraction>(out PlayerInteraction pi))
+            OnEnterTriggerExecute();
     }
     private void OnTriggerStay(Collider other)
     {
-        OnStayTriggerExecute();
+        if (other.TryGetComponent<PlayerInteraction>(out PlayerInteraction pi))
+            OnStayTriggerExecute();
     }
     private void OnTriggerExit(Collider other)
     {
-        OnExitTriggerExecute();
+        if (other.TryGetComponent<PlayerInteraction>(out PlayerInteraction pi))
+            OnExitTriggerExecute();
     }
     public abstract void OnEnterTriggerExecute();
     public abstract void OnStayTriggerExecute();
